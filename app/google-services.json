@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "374974525285",
+    "project_id": "pucanteen",
+    "storage_bucket": "pucanteen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374974525285:android:6e622d32b67152f7e23b8c",
+        "android_client_info": {
+          "package_name": "com.example.pucanteen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1ZlV8b7bAYfxQdS9Chay6whJZEBuHvLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

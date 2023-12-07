@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark_background">#424856</color>
+    <color name="background">#7C8483</color>
+    <color name="primary">#71A2B6</color>
+    <color name="secondary">#60B2E5</color>
+    <color name="accent">#53F4FF</color>
+    <color name="button">#982649</color>
+    <color name="error">#DC143C</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lavender">#8692f7</color>
+</resources>
