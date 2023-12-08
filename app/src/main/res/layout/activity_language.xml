@@ -80,7 +80,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/english_icon" />
+                android:src="@drawable/england_icon" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
