@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <string name="app_name">Kantin PU</string>
+    <string name="login">Masuk</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="incorrect_value">email atau kata sandi salah</string>
+    <string name="btn_login">Masuk</string>
+    <string name="note1">Pertama kali kesini?</string>
+    <string name="sign_up">Daftar</string>
+    <string name="note2">Universitas Presiden\nAplikasi Kantin</string>
+    <string name="btn_register">Daftar</string>
+    <string name="new_account">Akun \nBaru</string>
+    <string name="name">Nama</string>
+    <string name="select_language">Pilih Bahasa</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="english">English</string>
 </resources>

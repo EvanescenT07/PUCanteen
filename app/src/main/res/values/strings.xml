@@ -1,4 +1,17 @@
 <resources>
-    <string name="app_name">PUCanteen</string>
-
+    <string name="app_name">PU Canteen</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="incorrect_value">Incorrect email or password</string>
+    <string name="btn_login">Log In</string>
+    <string name="note1">First time here?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="note2">President University\nCanteen Application</string>
+    <string name="btn_register">Register</string>
+    <string name="new_account">New \nAccount</string>
+    <string name="name">Name</string>
+    <string name="select_language">Select Language</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="english">English</string>
 </resources>
