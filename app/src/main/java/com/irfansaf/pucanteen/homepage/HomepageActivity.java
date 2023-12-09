@@ -1,10 +1,10 @@
-package com.example.pucanteen.homepage;
+package com.irfansaf.pucanteen.homepage;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.pucanteen.R;
+import com.irfansaf.pucanteen.R;
 
 public class HomepageActivity extends AppCompatActivity {
 

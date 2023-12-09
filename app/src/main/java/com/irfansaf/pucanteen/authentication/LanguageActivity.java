@@ -1,4 +1,4 @@
-package com.example.pucanteen.authentication;
+package com.irfansaf.pucanteen.authentication;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,8 +8,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-import com.example.pucanteen.MainActivity;
-import com.example.pucanteen.R;
+import com.irfansaf.pucanteen.MainActivity;
+import com.irfansaf.pucanteen.R;
 
 public class LanguageActivity extends AppCompatActivity {
     CardView indonesianLang, englishLang;

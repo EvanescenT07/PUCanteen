@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.pucanteen"
+    namespace = "com.irfansaf.pucanteen"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.pucanteen"
+        applicationId = "com.irfansaf.pucanteen"
         minSdk = 28
         targetSdk = 33
         versionCode = 1
