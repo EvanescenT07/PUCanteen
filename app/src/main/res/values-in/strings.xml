@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="hello_blank_fragment">Hello Blank Fragment</string>
     <string name="app_name">Kantin PU</string>
     <string name="login">Masuk</string>
     <string name="email">Email</string>

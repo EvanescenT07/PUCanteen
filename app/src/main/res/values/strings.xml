@@ -1,4 +1,5 @@
 <resources>
+    <string name="hello_blank_fragment">Hello Blank Fragment</string>
     <string name="app_name">PU Canteen</string>
     <string name="login">Login</string>
     <string name="email">Email</string>
