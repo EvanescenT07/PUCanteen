@@ -1,16 +1,18 @@
 package com.example.pucanteen;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.pucanteen.authentication.LanguageActivity;
 import com.example.pucanteen.authentication.LoginActivity;
 import com.example.pucanteen.authentication.RegisterActivity;
 
 public class MainActivity extends AppCompatActivity {
+    ImageView translateBtn;
     Button loginBtn, registerBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,12 @@ public class MainActivity extends AppCompatActivity {
         registerBtn.setOnClickListener(v -> {
             Intent registerApp = new Intent(getApplicationContext(), RegisterActivity.class);
             startActivity(registerApp);
+        });
+
+        translateBtn = findViewById(R.id.translateButton);
+        translateBtn.setOnClickListener(v -> {
+            Intent translateApp = new Intent(getApplicationContext(), LanguageActivity.class);
+            startActivity(translateApp);
         });
     }
 }
