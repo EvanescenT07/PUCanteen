@@ -1,4 +1,4 @@
-package com.example.pucanteen;
+package com.irfansaf.pucanteen;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.example.pucanteen.authentication;
+package com.irfansaf.pucanteen.authentication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,10 +10,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.pucanteen.MainActivity;
-import com.example.pucanteen.R;
+import com.irfansaf.pucanteen.MainActivity;
+import com.irfansaf.pucanteen.R;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.ktx.Firebase;
 
 public class RegisterActivity extends AppCompatActivity {
     private FirebaseAuth nAuth;

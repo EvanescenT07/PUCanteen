@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "374974525285",
-    "project_id": "pucanteen",
-    "storage_bucket": "pucanteen.appspot.com"
+    "project_number": "70123583125",
+    "project_id": "canteen-pu",
+    "storage_bucket": "canteen-pu.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:374974525285:android:6e622d32b67152f7e23b8c",
+        "mobilesdk_app_id": "1:70123583125:android:6cdd1c6407740f7b348d9c",
         "android_client_info": {
-          "package_name": "com.example.pucanteen"
+          "package_name": "com.irfansaf.pucanteen"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyC1ZlV8b7bAYfxQdS9Chay6whJZEBuHvLE"
+          "current_key": "AIzaSyAvWJ4PbrWl6lHXGy6Q7eaJzORT0hDJHb4"
         }
       ],
       "services": {

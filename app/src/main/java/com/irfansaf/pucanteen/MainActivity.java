@@ -1,4 +1,4 @@
-package com.example.pucanteen;
+package com.irfansaf.pucanteen;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,9 +7,9 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.pucanteen.authentication.LanguageActivity;
-import com.example.pucanteen.authentication.LoginActivity;
-import com.example.pucanteen.authentication.RegisterActivity;
+import com.irfansaf.pucanteen.authentication.LanguageActivity;
+import com.irfansaf.pucanteen.authentication.LoginActivity;
+import com.irfansaf.pucanteen.authentication.RegisterActivity;
 
 public class MainActivity extends AppCompatActivity {
     ImageView translateBtn;

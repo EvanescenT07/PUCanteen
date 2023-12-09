@@ -1,5 +1,5 @@
 
-package com.example.pucanteen.authentication;
+package com.irfansaf.pucanteen.authentication;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,9 +11,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.pucanteen.MainActivity;
-import com.example.pucanteen.R;
-import com.example.pucanteen.homepage.HomepageActivity;
+import com.irfansaf.pucanteen.MainActivity;
+import com.irfansaf.pucanteen.R;
+import com.irfansaf.pucanteen.homepage.HomepageActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
