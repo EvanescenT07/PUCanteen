@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/homeIcon"
+        android:id="@+id/action_home"
+        android:title="Home"
         android:icon="@drawable/home_icon"
-        android:title="Home"/>
-
+        android:numericShortcut="1" />
     <item
-        android:id="@+id/historyIcon"
+        android:id="@+id/action_history"
+        android:title="History"
         android:icon="@drawable/history_icon"
-        android:title="History"/>
-        />
-
+        android:numericShortcut="2" />
     <item
-        android:title=""/>
-
-    <item
-        android:id="@+id/menuIcon"
+        android:id="@+id/action_menu"
+        android:title="Menu"
         android:icon="@drawable/menu_icon"
-        android:title="Menu"/>
+        android:numericShortcut="3"/>
     <item
-        android:id="@+id/profileIcon"
+        android:id="@+id/action_profile"
+        android:title="Profile"
         android:icon="@drawable/profile_icon"
-        android:title="Profile"/>
-
-    </menu>
+        android:numericShortcut="4"/>
+</menu>
