@@ -15,4 +15,13 @@
     <string name="select_language">Select Language</string>
     <string name="indonesia">Indonesia</string>
     <string name="english">English</string>
+
+    <string name="edit_profile">Edit Your Profile</string>
+    <string name="edit_profile_text">Do you want to edit your profile?"</string>
+
+    <string name="user_logout">Logout Account</string>
+    <string name="user_logout_text">Are you sure you want to exit??</string>
+
+    <string name="confirm_yes">Yes</string>
+    <string name="confirm_no">No</string>
 </resources>

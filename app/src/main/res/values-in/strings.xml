@@ -16,4 +16,13 @@
     <string name="select_language">Pilih Bahasa</string>
     <string name="indonesia">Indonesia</string>
     <string name="english">English</string>
+
+    <string name="edit_profile">Edit Profil Kamu</string>
+    <string name="edit_profile_text">Ingin edit profil kamu?</string>
+
+    <string name="user_logout">Keluar Akun</string>
+    <string name="user_logout_text">Kamu yakin ingin keluar?</string>
+
+    <string name="confirm_yes">Ya</string>
+    <string name="confirm_no">Tidak</string>
 </resources>

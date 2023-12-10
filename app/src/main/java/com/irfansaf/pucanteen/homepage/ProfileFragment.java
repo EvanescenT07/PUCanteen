@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -79,20 +80,28 @@ public class ProfileFragment extends Fragment {
     }
     private void editProfile() {
         AlertDialog.Builder ConfirmEdit = new AlertDialog.Builder(requireContext());
-        ConfirmEdit.setTitle("Profile");
-        ConfirmEdit.setMessage("Edit Profile?");
-        ConfirmEdit.setPositiveButton("Yes", (dialog, which) -> {
+        ConfirmEdit.setTitle(getString(R.string.edit_profile));
+        ConfirmEdit.setMessage(R.string.edit_profile_text);
+        ConfirmEdit.setPositiveButton(getString(R.string.confirm_yes), (dialog, which) -> {
             Intent userEdit = new Intent(getActivity(), com.irfansaf.pucanteen.user.EditProfile.class);
             startActivity(userEdit);
         });
-        ConfirmEdit.setNegativeButton("No", (dialog, which) -> {});
+        ConfirmEdit.setNegativeButton(getString(R.string.confirm_no), (dialog, which) -> {});
         AlertDialog alertDialog = ConfirmEdit.create();
         alertDialog.show();
     }
     private void logoutUser() {
         FirebaseAuth.getInstance().signOut();
-        Intent logout = new Intent(getActivity(), com.irfansaf.pucanteen.MainActivity.class);
-        logout.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(logout);
+        AlertDialog.Builder UserLogout = new AlertDialog.Builder(requireContext());
+        UserLogout.setTitle(getString(R.string.user_logout));
+        UserLogout.setMessage(R.string.user_logout_text);
+        UserLogout.setPositiveButton(getString(R.string.confirm_yes),(dialog, which) -> {
+            Intent logout = new Intent(getActivity(), com.irfansaf.pucanteen.MainActivity.class);
+            logout.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(logout);
+        });
+        UserLogout.setNegativeButton(getString(R.string.confirm_no), (dialog, which) -> {});
+        AlertDialog alertDialog = UserLogout.create();
+        alertDialog.show();
     }
 }
