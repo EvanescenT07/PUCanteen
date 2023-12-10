@@ -4,17 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.irfansaf.pucanteen.homepage.HomepageActivity">
 
-    <!-- Fragment Container -->
-    <FrameLayout
-        android:id="@+id/fragmentContainer"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentApp"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_above="@+id/bottomNavigationView"
-        android:layout_weight="1" />
+        android:layout_height="880dp"
+        android:layout_above="@+id/bottomNavigationView"/>
 
-    <!-- Bottom Navigation Bar -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"

@@ -7,6 +7,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.irfansaf.pucanteen.R;
 import com.irfansaf.pucanteen.authentication.LanguageActivity;
 import com.irfansaf.pucanteen.authentication.LoginActivity;
 import com.irfansaf.pucanteen.authentication.RegisterActivity;

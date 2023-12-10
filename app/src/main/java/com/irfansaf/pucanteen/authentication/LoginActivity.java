@@ -22,7 +22,6 @@ public class LoginActivity extends AppCompatActivity {
     TextView authFail, signUp;
     Button loginBtn;
     private FirebaseAuth nAuth;
-    private String checkEmail, checkPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,8 +47,8 @@ public class LoginActivity extends AppCompatActivity {
         loginBtn.setOnClickListener(v -> authentication());
     }
     private void authentication() {
-        checkEmail = email.getText().toString();
-        checkPassword = password.getText().toString();
+        String checkEmail = email.getText().toString();
+        String checkPassword = password.getText().toString();
         nAuth.signInWithEmailAndPassword(checkEmail, checkPassword)
                 .addOnCompleteListener(this, task -> {
                     if (task.isSuccessful()) {

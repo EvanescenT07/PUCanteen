@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_background"
-    tools:context=".authentication.RegisterActivity">
+    tools:context="com.irfansaf.pucanteen.authentication.RegisterActivity">
 
     <ImageView
         android:id="@+id/backButton"

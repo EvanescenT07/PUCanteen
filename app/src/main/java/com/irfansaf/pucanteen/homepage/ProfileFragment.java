@@ -1,5 +1,7 @@
 package com.irfansaf.pucanteen.homepage;
 
+import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,7 +9,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 
+import com.google.firebase.Firebase;
+import com.google.firebase.auth.FirebaseAuth;
 import com.irfansaf.pucanteen.R;
 
 /**
@@ -25,6 +31,8 @@ public class ProfileFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    ImageView editprofileBtn;
+    Button logoutBtn;
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -61,6 +69,30 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        View Return =  inflater.inflate(R.layout.fragment_profile, container, false);
+        editprofileBtn = Return.findViewById(R.id.editIcon);
+        editprofileBtn.setOnClickListener(v -> editProfile());
+
+        logoutBtn = Return.findViewById(R.id.logoutButton);
+        logoutBtn.setOnClickListener(v -> logoutUser());
+        return Return;
+    }
+    private void editProfile() {
+        AlertDialog.Builder ConfirmEdit = new AlertDialog.Builder(requireContext());
+        ConfirmEdit.setTitle("Profile");
+        ConfirmEdit.setMessage("Edit Profile?");
+        ConfirmEdit.setPositiveButton("Yes", (dialog, which) -> {
+            Intent userEdit = new Intent(getActivity(), com.irfansaf.pucanteen.user.EditProfile.class);
+            startActivity(userEdit);
+        });
+        ConfirmEdit.setNegativeButton("No", (dialog, which) -> {});
+        AlertDialog alertDialog = ConfirmEdit.create();
+        alertDialog.show();
+    }
+    private void logoutUser() {
+        FirebaseAuth.getInstance().signOut();
+        Intent logout = new Intent(getActivity(), com.irfansaf.pucanteen.MainActivity.class);
+        logout.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(logout);
     }
 }
