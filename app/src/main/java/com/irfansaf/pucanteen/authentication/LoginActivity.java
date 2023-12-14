@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         authFail = findViewById(R.id.authFailed);
         authFail.setVisibility(View.GONE);
 
-        signUp = findViewById(R.id.SignUp);
+        signUp = findViewById(R.id.signUpButton);
         signUp.setOnClickListener(v -> setSignUp());
 
         loginBtn = findViewById(R.id.loginButton);

@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Kantin PU</string>
+    <string name="edit">Edit</string>
     <string name="login">Masuk</string>
     <string name="logout">Keluar</string>
     <string name="email">Email</string>
     <string name="password">Kata Sandi</string>
+
     <string name="incorrect_value">email atau kata sandi salah</string>
     <string name="btn_login">Masuk</string>
     <string name="note1">Pertama kali kesini?</string>
     <string name="sign_up">Daftar</string>
     <string name="note2">Universitas Presiden\nAplikasi Kantin</string>
+    <string name="edit_profile_title">Edit Profil</string>
     <string name="btn_register">Daftar</string>
     <string name="new_account">Akun \nBaru</string>
-    <string name="name">Nama</string>
+
+    <string name="full_name">Nama Lengkap</string>
+    <string name="phone_number">Nomor Telepon</string>
+    <string name="major">Jurusan</string>
+    <string name="batch">Angkatan</string>
+
     <string name="select_language">Pilih Bahasa</string>
     <string name="indonesia">Indonesia</string>
     <string name="english">English</string>
@@ -25,4 +33,13 @@
 
     <string name="confirm_yes">Ya</string>
     <string name="confirm_no">Tidak</string>
+
+    <string name="btn_save">Simpan</string>
+
+    <string name="home">Beranda</string>
+    <string name="history">Riwayat</string>
+    <string name="menu">Menu</string>
+    <string name="profile">Profil</string>
+
+    <string name="order_history">Riwayat Pesanan</string>
 </resources>

@@ -1,17 +1,24 @@
 <resources>
     <string name="app_name">PU Canteen</string>
+    <string name="edit">Edit</string>
     <string name="login">Login</string>
-    <string name="logout">Logout</string>
+    <string name="logout">Log out</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="incorrect_value">Incorrect email or password</string>
     <string name="btn_login">Log In</string>
-    <string name="note1">First time here?</string>
+    <string name="note1">Have an account?</string>
     <string name="sign_up">Sign Up</string>
     <string name="note2">President University\nCanteen Application</string>
+    <string name="edit_profile_title">Edit Profile</string>
     <string name="btn_register">Register</string>
     <string name="new_account">New \nAccount</string>
-    <string name="name">Name</string>
+
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="major">Major</string>
+    <string name="batch">Batch</string>
+
     <string name="select_language">Select Language</string>
     <string name="indonesia">Indonesia</string>
     <string name="english">English</string>
@@ -24,4 +31,15 @@
 
     <string name="confirm_yes">Yes</string>
     <string name="confirm_no">No</string>
+
+    <string name="btn_save">Save</string>
+
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="menu">Menu</string>
+    <string name="profile">Profile</string>
+
+    <string name="order_history">Order History</string>
+
+
 </resources>
