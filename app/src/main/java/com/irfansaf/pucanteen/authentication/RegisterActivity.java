@@ -18,26 +18,32 @@ public class RegisterActivity extends AppCompatActivity {
     private FirebaseAuth nAuth;
     ImageView backBtn;
     TextView registerFail;
-    EditText name, email, password;
+    EditText name, phone, email, password, major, batch;
     Button registerBtn;
-    String userName, userEmail, userPassword;
+    String userName, userEmail, userPassword, userPhone, userMajor, userBatch;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         nAuth = FirebaseAuth.getInstance();
 
-        registerFail = findViewById(R.id.registFailed);
+        registerFail = findViewById(R.id.authFailed);
         registerFail.setVisibility(View.GONE);
 
         backBtn = findViewById(R.id.backButton);
         backBtn.setOnClickListener(v -> setBackBtn());
 
-        name = findViewById(R.id.inputName);
+        name = findViewById(R.id.inputFullName);
 
         email = findViewById(R.id.inputEmail);
 
         password = findViewById(R.id.inputPassword);
+
+        phone = findViewById(R.id.inputPhone);
+
+        major = findViewById(R.id.inputMajor);
+
+        batch = findViewById(R.id.inputBatch);
 
         registerBtn = findViewById(R.id.registerButton);
         registerBtn.setOnClickListener(v -> registerAccount());
@@ -47,7 +53,6 @@ public class RegisterActivity extends AppCompatActivity {
         startActivity(back);
     }
     private void registerAccount() {
-        userName = name.getText().toString();
         userEmail = email.getText().toString();
         userPassword = password.getText().toString();
         nAuth.createUserWithEmailAndPassword(userEmail, userPassword)
@@ -59,6 +64,13 @@ public class RegisterActivity extends AppCompatActivity {
                         registerFail.setVisibility(View.VISIBLE);
                     }
                 });
-
+    }
+    private void userData() {
+        userName = name.getText().toString();
+        userEmail = email.getText().toString();
+        userPassword = password.getText().toString();
+        userPhone = phone.getText().toString();
+        userMajor = major.getText().toString();
+        userBatch = batch.getText().toString();
     }
 }
