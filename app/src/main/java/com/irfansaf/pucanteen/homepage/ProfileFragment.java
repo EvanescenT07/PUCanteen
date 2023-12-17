@@ -71,8 +71,6 @@ public class ProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View Return =  inflater.inflate(R.layout.fragment_profile, container, false);
-        editprofileBtn = Return.findViewById(R.id.editIcon);
-        editprofileBtn.setOnClickListener(v -> editProfile());
 
         logoutBtn = Return.findViewById(R.id.logoutButton);
         logoutBtn.setOnClickListener(v -> logoutUser());

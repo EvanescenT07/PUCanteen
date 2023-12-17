@@ -1,8 +1,11 @@
-
 package com.irfansaf.pucanteen.authentication;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,10 +14,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.irfansaf.pucanteen.MainActivity;
 import com.irfansaf.pucanteen.R;
 import com.irfansaf.pucanteen.homepage.HomepageActivity;
-import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
     ImageView backBtn;
@@ -22,7 +25,9 @@ public class LoginActivity extends AppCompatActivity {
     TextView authFail, signUp;
     Button loginBtn;
     private FirebaseAuth nAuth;
+    private boolean passwordVisible = false;
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +41,16 @@ public class LoginActivity extends AppCompatActivity {
         email = findViewById(R.id.inputEmail);
 
         password = findViewById(R.id.inputPassword);
+        password.setOnTouchListener((v, event) -> {
+            final int DRAWABLE_RIGHT = 2;
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                if (event.getRawX() >= (password.getRight() - password.getCompoundDrawables()[DRAWABLE_RIGHT].getBounds().width())) {
+                    togglePasswordVisibility();
+                    return true;
+                }
+            }
+            return false;
+        });
 
         authFail = findViewById(R.id.authFailed);
         authFail.setVisibility(View.GONE);
@@ -66,5 +81,14 @@ public class LoginActivity extends AppCompatActivity {
     private void setBackBtn() {
         Intent back = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(back);
+    }
+    private void togglePasswordVisibility() {
+        if (passwordVisible) {
+            password.setTransformationMethod(PasswordTransformationMethod.getInstance());
+        } else {
+            password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+        }
+        passwordVisible = !passwordVisible;
+        password.setSelection(password.getText().length());
     }
 }

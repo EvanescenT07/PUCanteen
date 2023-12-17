@@ -11,11 +11,12 @@
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/back"
+        android:src="@drawable/back_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="50dp"
-        android:layout_marginStart="30dp"/>
+        android:layout_marginStart="30dp"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/languageTitle"
@@ -46,11 +47,13 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="10dp"
-            android:gravity="center" >
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/indonesia_icon" />
+                android:src="@drawable/indonesia_icon"
+                tools:ignore="ContentDescription" />
             <TextView
                 android:id="@+id/indonesiaText"
                 android:layout_width="wrap_content"
@@ -77,11 +80,13 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="10dp"
-            android:gravity="center" >
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/england_icon" />
+                android:src="@drawable/england_icon"
+                tools:ignore="ContentDescription" />
             <TextView
                 android:id="@+id/englishText"
                 android:layout_width="wrap_content"
