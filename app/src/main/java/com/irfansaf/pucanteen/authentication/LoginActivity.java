@@ -79,8 +79,7 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(signUpAccount);
     }
     private void setBackBtn() {
-        Intent back = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(back);
+        finish();
     }
     private void togglePasswordVisibility() {
         if (passwordVisible) {

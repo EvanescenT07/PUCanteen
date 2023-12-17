@@ -49,8 +49,7 @@ public class RegisterActivity extends AppCompatActivity {
         registerBtn.setOnClickListener(v -> registerAccount());
     }
     private void setBackBtn() {
-        Intent back = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(back);
+        finish();
     }
     private void registerAccount() {
         userEmail = email.getText().toString();
