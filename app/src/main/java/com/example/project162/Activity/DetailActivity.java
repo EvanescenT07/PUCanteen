@@ -37,24 +37,24 @@ public class DetailActivity extends BaseActivity {
                 .load(object.getImagePath())
                 .into(binding.pic);
 
-        binding.priceTxt.setText("$" + object.getPrice());
+        binding.priceTxt.setText("Rp" + object.getPrice());
         binding.titleTxt.setText(object.getTitle());
         binding.descriptionTxt.setText(object.getDescription());
         binding.rateTxt.setText(object.getStar() + " Rating");
         binding.ratingBar.setRating((float) object.getStar());
-        binding.totalTxt.setText((num * object.getPrice() + "$"));
+        binding.totalTxt.setText((num * object.getPrice() + "Rp"));
 
         binding.plusBtn.setOnClickListener(v -> {
             num = num + 1;
             binding.numTxt.setText(num + " ");
-            binding.totalTxt.setText("$" + (num * object.getPrice()));
+            binding.totalTxt.setText("Rp" + (num * object.getPrice()));
         });
 
         binding.minusBtn.setOnClickListener(v -> {
             if (num > 1) {
                 num = num - 1;
                 binding.numTxt.setText(num + "");
-                binding.totalTxt.setText("$" + (num * object.getPrice()));
+                binding.totalTxt.setText("Rp" + (num * object.getPrice()));
             }
         });
 

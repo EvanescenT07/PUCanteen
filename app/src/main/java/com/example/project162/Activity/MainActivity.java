@@ -41,7 +41,6 @@ public class MainActivity extends BaseActivity {
 
         initLocation();
         initTime();
-        initPrice();
         initBestFood();
         initCategory();
         setVariable();
@@ -166,33 +165,5 @@ public class MainActivity extends BaseActivity {
 
             }
         });
-    }
-
-    private void initPrice() {
-        DatabaseReference myRef = database.getReference("Price");
-        ArrayList<Price> list = new ArrayList<>();
-        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (snapshot.exists()) {
-                    for (DataSnapshot issue : snapshot.getChildren()) {
-                        list.add(issue.getValue(Price.class));
-                    }
-                    ArrayAdapter<Price> adapter = new ArrayAdapter<>(MainActivity.this, R.layout.sp_item, list);
-                    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    binding.priceSp.setAdapter(adapter);
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-    }
-
-    @Override
-    public void onBackPressed() {
-        
     }
 }
