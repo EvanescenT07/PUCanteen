@@ -7,9 +7,14 @@ public class Location {
     public Location() {
     }
 
+    // Add a constructor that takes a String parameter for the location name
+    public Location(String loc) {
+        Loc = loc;
+    }
+
     @Override
     public String toString() {
-        return  Loc ;
+        return Loc;
     }
 
     public int getId() {
